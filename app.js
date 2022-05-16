@@ -44,7 +44,7 @@ app.post("/",function(req,res){
 app.post("/failure",function (req,res) {
   res.redirect("/");
 });
-app.listen(port,function () {
+app.listen(port || 3000,function () {
   console.log("server open on port 3000");
 
 });
